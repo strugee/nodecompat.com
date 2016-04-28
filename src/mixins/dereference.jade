@@ -1,0 +1,5 @@
+mixin dereference(versionString, nodeFlavor, dataset)
+	-
+		var targetDistro = versionString.split('.')[0]
+		var targetRelease = versionString.split('.')[1]
+	!= dataset[targetDistro][targetRelease][nodeFlavor]

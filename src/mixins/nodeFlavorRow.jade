@@ -1,0 +1,9 @@
+include ./dereference.jade
+
+mixin nodeFlavorRow(data, nodeFlavor, dataset)
+	each versions in data
+		if versions.alias
+			td
+				+dereference(versions.alias, nodeFlavor, dataset)
+		else
+			td= versions[nodeFlavor]

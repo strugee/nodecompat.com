@@ -1,3 +1,5 @@
+include ./mixins/nodeFlavorRow.jade
+
 doctype html
 html
 	head
@@ -14,9 +16,7 @@ html
 							td= codename
 				tr
 					td Stable
-					each versions, codename in data
-						td= versions['stable']
+					+nodeFlavorRow(data, 'stable', versions)
 				tr
 					td LTS
-					each versions, codename in data
-						td= versions['lts']
+					+nodeFlavorRow(data, 'lts', versions)
