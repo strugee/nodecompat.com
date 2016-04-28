@@ -5,4 +5,18 @@ html
 		// TODO meta tags and stuff
 	body
 		each data, distro in versions
-			p= distro
+			h2= distro
+			table
+				thead
+					tr
+						td &nbsp;
+						each versions, codename in data
+							td= codename
+				tr
+					td stable
+					each versions, codename in data
+						td= versions['stable']
+				tr
+					td lts
+					each versions, codename in data
+						td= versions['lts']
