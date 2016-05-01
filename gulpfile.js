@@ -2,6 +2,7 @@ var gulp = require('gulp');
 var jade = require('gulp-jade');
 var stylus = require('gulp-stylus');
 var rename = require('gulp-rename');
+var ghPages = require('gulp-gh-pages');
 
 gulp.task('html', function() {
 	return gulp.src('src/*.jade')
@@ -23,8 +24,14 @@ gulp.task('images', function() {
 
 gulp.task('build', ['html', 'css', 'images']);
 
+gulp.task('deploy', ['build'], function() {
+	return gulp.src('dist/**/*')
+	           .pipe(ghPages());
+});
+
 gulp.task('watch', ['build'], function() {
 	gulp.watch('src/index.jade', ['html']);
 	gulp.watch('src/mixins/*.jade', ['html']);
 	gulp.watch('src/styles/*.styl', ['css']);
+	gulp.watch('src/images/*', ['images']);
 });
