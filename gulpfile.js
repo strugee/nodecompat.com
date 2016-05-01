@@ -17,3 +17,9 @@ gulp.task('css', function() {
 });
 
 gulp.task('build', ['html', 'css']);
+
+gulp.task('watch', ['build'], function() {
+	gulp.watch('src/index.jade', ['html']);
+	gulp.watch('src/mixins/*.jade', ['html']);
+	gulp.watch('src/styles/*.styl', ['css']);
+});
