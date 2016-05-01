@@ -96,5 +96,37 @@
 		"lts": "4.2.2"
 	    }
 	}
+    },
+    "distros": {
+	"debian": {
+	    "prettyname": "Debian GNU/Linux"
+	},
+	"ubuntu": {
+	    "prettyname": "Ubuntu"
+	},
+	"fedora": {
+	    "prettyname": "Fedora"
+	},
+	"redhat": {
+	    "prettyname": "Red Hat Enterprise Linux"
+	},
+	"centos": {
+	    "prettyname": "CentOS"
+	},
+	"archlinux": {
+	    "prettyname": "Arch Linux"
+	},
+	"gentoo": {
+	    "prettyname": "Gentoo Linux"
+	},
+	"opensuse": {
+	    "prettyname": "openSUSE"
+	},
+	"suse": {
+	    "prettyname": "SUSE Linux Enterprise"
+	},
+	"upstream": {
+	    "prettyname": "Node.js Foundation upstream"
+	}
     }
 }
