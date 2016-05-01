@@ -16,7 +16,12 @@ gulp.task('css', function() {
 	           .pipe(gulp.dest('dist/css'));
 });
 
-gulp.task('build', ['html', 'css']);
+gulp.task('images', function() {
+	return gulp.src('src/images/*')
+	           .pipe(gulp.dest('dist/images'));
+});
+
+gulp.task('build', ['html', 'css', 'images']);
 
 gulp.task('watch', ['build'], function() {
 	gulp.watch('src/index.jade', ['html']);
