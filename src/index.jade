@@ -9,17 +9,19 @@ html
 		meta(name='description', content='Node.js version compatibility chart')
 		link(rel='stylesheet', href='css/main.css')
 	body
-		each data, distro in versions
-			h2= distro
-			table
-				thead
-					tr
-						td &nbsp;
-						each versions, codename in data
-							td= codename
-				tr
-					td Stable
-					+nodeFlavorRow(data, 'stable', versions)
-				tr
-					td LTS
-					+nodeFlavorRow(data, 'lts', versions)
+		div#container
+			each data, distro in versions
+				div.distro-block
+					h2= distro
+					table
+						thead
+							tr
+								td &nbsp;
+								each versions, codename in data
+									td= codename
+						tr
+							td Stable
+							+nodeFlavorRow(data, 'stable', versions)
+						tr
+							td LTS
+							+nodeFlavorRow(data, 'lts', versions)
