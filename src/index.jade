@@ -3,8 +3,11 @@ include ./mixins/nodeFlavorRow.jade
 doctype html
 html
 	head
+		meta(charset='utf-8')
 		title nodecompat.com
-		// TODO meta tags and stuff
+		meta(http-equiv='X-UA-Compatible', content='IE=edge,chrome=1')
+		meta(name='description', content='Node.js version compatibility chart')
+		link(rel='stylesheet', href='css/main.css')
 	body
 		each data, distro in versions
 			h2= distro

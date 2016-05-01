@@ -18,6 +18,8 @@
   "homepage": "https://github.com/strugee/nodecompat.com#readme",
   "dependencies": {
     "gulp": "^3.9.1",
-    "gulp-jade": "^1.1.0"
+    "gulp-jade": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-stylus": "^2.3.1"
   }
 }
