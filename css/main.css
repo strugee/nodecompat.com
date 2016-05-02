@@ -16,6 +16,9 @@ body {
   border-radius: 20px;
   width: 430px;
 }
+.none {
+  color: #808080;
+}
 footer {
   text-align: center;
   margin: 10px;
