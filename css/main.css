@@ -10,8 +10,8 @@ body {
   display: inline-block;
   margin: 20px;
   padding: 10px;
-  background: linear-gradient(0deg, #fff, #f4f4f4);
-  border: 1px solid #e0e0e0;
+  background: linear-gradient(0deg, #fff, #f5f5f5);
+  border: 1px solid #b0b0b0;
   border-radius: 20px;
   width: 400px;
 }
