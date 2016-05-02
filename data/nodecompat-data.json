@@ -11,6 +11,10 @@
 	    }
 	},
 	"ubuntu": {
+	    "xenial": {
+		"stable": null,
+		"lts": "4.2.6"
+	    },
 	    "wily": {
 		"stable": null,
 		"lts": "0.10.25"
@@ -108,14 +112,17 @@
 	"ubuntu": {
 	    "prettyname": "Ubuntu",
 	    "versions": {
+		"xenial": {
+		    "prettyname": "16.04"
+		},
 		"wily": {
 		    "prettyname": "15.10"
 		},
 		"trusty": {
-		    "prettyname": "14.04"
+		    "prettyname": "14.04 LTS"
 		},
 		"precise": {
-		    "prettyname": "12.04"
+		    "prettyname": "12.04 LTS"
 		}
 	    }
 	},
@@ -123,13 +130,13 @@
 	    "prettyname": "Fedora",
 	    "versions": {
 		"23": {
-
+		    "prettyname": "23"
 		},
 		"22": {
-
+		    "prettyname": "22"
 		},
 		"21": {
-
+		    "prettyname": "21"
 		}
 	    }
 	},
