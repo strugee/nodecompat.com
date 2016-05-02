@@ -1,5 +1,6 @@
 body {
   background-image: url("/images/noise.png");
+  font-family: 'Open Sans', sans-serif;
 }
 #container {
   display: block;
