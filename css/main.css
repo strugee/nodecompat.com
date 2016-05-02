@@ -4,7 +4,7 @@ body {
 #container {
   display: block;
   margin: auto;
-  max-width: 960px;
+  max-width: 1200px;
 }
 .distro-block {
   display: inline-block;
@@ -13,9 +13,10 @@ body {
   background: linear-gradient(0deg, #fff, #f5f5f5);
   border: 1px solid #b0b0b0;
   border-radius: 20px;
-  width: 400px;
+  width: 430px;
 }
 footer {
   text-align: center;
   margin: 10px;
+  max-width: 700px;
 }
