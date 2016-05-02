@@ -5,7 +5,14 @@ body {
 #container {
   display: block;
   margin: auto;
-  max-width: 1200px;
+  max-width: 924px;
+}
+h1,
+p {
+  margin: 20px;
+}
+#node {
+  color: #43853d;
 }
 .distro-block {
   display: inline-block;
@@ -14,13 +21,14 @@ body {
   background: linear-gradient(0deg, #fff, #f5f5f5);
   border: 1px solid #b0b0b0;
   border-radius: 20px;
-  width: 430px;
+  width: 400px;
 }
 .none {
   color: #808080;
 }
 footer {
   text-align: center;
-  margin: 10px;
+  padding: 10px;
+  margin: auto;
   max-width: 700px;
 }
