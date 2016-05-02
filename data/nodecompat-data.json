@@ -15,10 +15,6 @@
 		"stable": null,
 		"lts": "0.10.25"
 	    },
-	    "vivid": {
-		"stable": null,
-		"lts": "0.10.25"
-	    },
 	    "trusty": {
 		"stable": null,
 		"lts": "0.10.25"
@@ -102,10 +98,10 @@
 	    "prettyname": "Debian GNU/Linux",
 	    "versions": {
 		"wheezy": {
-
+		    "prettyname": "7"
 		},
 		"jessie": {
-
+		    "prettyname": "8"
 		}
 	    }
 	},
@@ -113,16 +109,13 @@
 	    "prettyname": "Ubuntu",
 	    "versions": {
 		"wily": {
-
-		},
-		"vivid": {
-
+		    "prettyname": "15.10"
 		},
 		"trusty": {
-
+		    "prettyname": "14.04"
 		},
 		"precise": {
-
+		    "prettyname": "12.04"
 		}
 	    }
 	},
@@ -144,16 +137,16 @@
 	    "prettyname": "Red Hat Enterprise Linux",
 	    "versions": {
 		"6": {
-		    "prettyname": "RHEL 6"
+		    "prettyname": "6"
 		},
 		"epel6": {
-		    "prettyname": "RHEL 6 + EPEL"
+		    "prettyname": "6 + EPEL"
 		},
 		"7": {
-		    "prettyname": "RHEL 7"
+		    "prettyname": "7"
 		},
 		"epel7": {
-		    "prettyname": "RHEL 7 + EPEL"
+		    "prettyname": "7 + EPEL"
 		}
 	    }
 	},
@@ -161,16 +154,16 @@
 	    "prettyname": "CentOS",
 	    "versions": {
 		"6": {
-		    "prettyname": "CentOS 6"
+		    "prettyname": "6"
 		},
 		"epel6": {
-		    "prettyname": "CentOS 6 + EPEL"
+		    "prettyname": "6 + EPEL"
 		},
 		"7": {
-		    "prettyname": "CentOS 7"
+		    "prettyname": "7"
 		},
 		"epel7": {
-		    "prettyname": "CentOS 7 + EPEL"
+		    "prettyname": "7 + EPEL"
 		}
 	    }
 	},
