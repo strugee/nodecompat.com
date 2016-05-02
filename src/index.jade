@@ -11,6 +11,8 @@ html
 		link(rel='stylesheet', href='css/main.css')
 	body
 		div#container
+			h1 <span id="node">node</span>compat.com
+			p Have a list of Linux distributions you'd like to run on, but not sure what Node versions you have to support? Or maybe that, but in reverse? No problem. nodecompat.com has you covered.
 			each data, distro in versions
 				div.distro-block
 					h2= distros[distro].prettyname
