@@ -1,5 +1,11 @@
 mixin dereference(versionString, nodeFlavor, dataset)
 	-
+		var output;
 		var targetDistro = versionString.split('.')[0]
 		var targetRelease = versionString.split('.')[1]
-	!= dataset[targetDistro][targetRelease][nodeFlavor]
+		if (dataset[targetDistro][targetRelease][nodeFlavor] !== null) {
+			output = dataset[targetDistro][targetRelease][nodeFlavor];
+		} else {
+			output = "<em class='none'>None</em>";
+		}
+	!= output

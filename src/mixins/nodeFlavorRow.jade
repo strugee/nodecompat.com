@@ -4,6 +4,11 @@ mixin nodeFlavorRow(data, nodeFlavor, dataset)
 	each versions in data
 		if versions.alias
 			td
+				// dereference() handles null values
 				+dereference(versions.alias, nodeFlavor, dataset)
 		else
-			td= versions[nodeFlavor]
+			if versions[nodeFlavor]
+				td= versions[nodeFlavor]
+			else
+				td
+					em.none None
