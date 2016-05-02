@@ -99,34 +99,116 @@
     },
     "distros": {
 	"debian": {
-	    "prettyname": "Debian GNU/Linux"
+	    "prettyname": "Debian GNU/Linux",
+	    "versions": {
+		"wheezy": {
+
+		},
+		"jessie": {
+
+		}
+	    }
 	},
 	"ubuntu": {
-	    "prettyname": "Ubuntu"
+	    "prettyname": "Ubuntu",
+	    "versions": {
+		"wily": {
+
+		},
+		"vivid": {
+
+		},
+		"trusty": {
+
+		},
+		"precise": {
+
+		}
+	    }
 	},
 	"fedora": {
-	    "prettyname": "Fedora"
+	    "prettyname": "Fedora",
+	    "versions": {
+		"23": {
+
+		},
+		"22": {
+
+		},
+		"21": {
+
+		}
+	    }
 	},
 	"redhat": {
-	    "prettyname": "Red Hat Enterprise Linux"
+	    "prettyname": "Red Hat Enterprise Linux",
+	    "versions": {
+		"6": {
+		    "prettyname": "RHEL 6"
+		},
+		"epel6": {
+		    "prettyname": "RHEL 6 + EPEL"
+		},
+		"7": {
+		    "prettyname": "RHEL 7"
+		},
+		"epel7": {
+		    "prettyname": "RHEL 7 + EPEL"
+		}
+	    }
 	},
 	"centos": {
-	    "prettyname": "CentOS"
+	    "prettyname": "CentOS",
+	    "versions": {
+		"6": {
+		    "prettyname": "CentOS 6"
+		},
+		"epel6": {
+		    "prettyname": "CentOS 6 + EPEL"
+		},
+		"7": {
+		    "prettyname": "CentOS 7"
+		},
+		"epel7": {
+		    "prettyname": "CentOS 7 + EPEL"
+		}
+	    }
 	},
 	"archlinux": {
-	    "prettyname": "Arch Linux"
+	    "prettyname": "Arch Linux",
+	    "versions": {
+		"current": {
+		    "prettyname": "(Rolling release)"
+		}
+	    }
 	},
 	"gentoo": {
-	    "prettyname": "Gentoo Linux"
+	    "prettyname": "Gentoo Linux",
+	    "versions": {
+		"current": {
+		    "prettyname": "(Rolling release)"
+		}
+	    }
 	},
 	"opensuse": {
-	    "prettyname": "openSUSE"
+	    "prettyname": "openSUSE",
+	    "versions": {
+		
+	    }
 	},
 	"suse": {
-	    "prettyname": "SUSE Linux Enterprise"
+	    "prettyname": "SUSE Linux Enterprise",
+	    "versions": {
+		
+	    }
 	},
 	"upstream": {
-	    "prettyname": "Node.js Foundation upstream"
+	    "prettyname": "Node.js Foundation upstream",
+	    "versions": {
+		"current": {
+		    "prettyname": "(Upstream)"
+		}
+	    }
 	}
     }
 }

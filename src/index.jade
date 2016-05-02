@@ -18,7 +18,7 @@ html
 							tr
 								td &nbsp;
 								each versions, codename in data
-									td= codename
+									td= distros[distro].versions[codename].prettyname
 						tr
 							td Stable
 							+nodeFlavorRow(data, 'stable', versions)
