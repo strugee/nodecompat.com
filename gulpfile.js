@@ -31,6 +31,7 @@ gulp.task('deploy', ['build'], function() {
 
 gulp.task('watch', ['build'], function() {
 	gulp.watch('src/index.jade', ['html']);
+	gulp.watch('data/nodecompat-data.json', ['html']);
 	gulp.watch('src/mixins/*.jade', ['html']);
 	gulp.watch('src/styles/*.styl', ['css']);
 	gulp.watch('src/images/*', ['images']);
