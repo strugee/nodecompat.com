@@ -2,44 +2,40 @@
     "versions": {
 	"debian": {
 	    "wheezy": {
-		"stable": "0.10.29",
+		"stable": "0.10",
 		"lts": null
 	    },
 	    "jessie": {
 		"stable": null,
-		"lts": "0.10.29"
+		"lts": "0.10"
 	    }
 	},
 	"ubuntu": {
 	    "xenial": {
 		"stable": null,
-		"lts": "4.2.6"
+		"lts": "4.2"
 	    },
 	    "wily": {
 		"stable": null,
-		"lts": "0.10.25"
+		"lts": "0.10"
 	    },
 	    "trusty": {
 		"stable": null,
-		"lts": "0.10.25"
+		"lts": "0.10"
 	    },
 	    "precise": {
 		"stable": null,
-		"lts": "0.6.12"
+		"lts": "0.6"
 	    }
 	},
 	"fedora": {
 	    "23": {
 		"stable": null,
-		"lts": "0.10.36"
+		"lts": "0.10"
 	    },
 	    "22": {
 		"stable": null,
-		"lts": "0.10.36"
-	    },
-	    "21": {
-		"stable": null,
-		"lts": "0.10.36"
+		"lts": "0.10"
 	    }
 	},
 	"redhat": {
@@ -49,7 +45,7 @@
 	    },
 	    "epel6": {
 		"stable": null,
-		"lts": "0.10.36"
+		"lts": "0.10"
 	    },
 	    "7": {
 		"stable": null,
@@ -57,7 +53,7 @@
 	    },
 	    "epel7": {
 		"stable": null,
-		"lts": "0.10.36"
+		"lts": "0.10"
 	    }
 	},
 	"centos": {
@@ -99,7 +95,7 @@
 	},
 	"upstream": {
 	    "current": {
-		"stable": "5.0.0",
+		"stable": "6.0",
 		"lts": "4.2.2"
 	    }
 	}
@@ -124,7 +120,7 @@
 	    "ltsdesc": "<code>universe</code>",
 	    "versions": {
 		"xenial": {
-		    "prettyname": "16.04"
+		    "prettyname": "16.04 LTS"
 		},
 		"wily": {
 		    "prettyname": "15.10"
