@@ -3,6 +3,8 @@ var jade = require('gulp-jade');
 var stylus = require('gulp-stylus');
 var rename = require('gulp-rename');
 var ghPages = require('gulp-gh-pages');
+var browserify = require('browserify');
+var source = require('vinyl-source-stream');
 
 gulp.task('html', function() {
 	return gulp.src('src/*.jade')
@@ -17,12 +19,23 @@ gulp.task('css', function() {
 	           .pipe(gulp.dest('dist/css'));
 });
 
+gulp.task('js', function () {
+	var b = browserify({
+		entries: 'src/scripts/main.js',
+		debug: true,
+		transform: ['es6-browserify']
+	});
+	return b.bundle()
+	        .pipe(source('app.js'))
+	        .pipe(gulp.dest('dist/scripts'));
+});
+
 gulp.task('images', function() {
 	return gulp.src('src/images/*')
 	           .pipe(gulp.dest('dist/images'));
 });
 
-gulp.task('build', ['html', 'css', 'images']);
+gulp.task('build', ['html', 'css', 'js', 'images']);
 
 gulp.task('deploy', ['build'], function() {
 	return gulp.src('dist/**/*')
@@ -34,5 +47,6 @@ gulp.task('watch', ['build'], function() {
 	gulp.watch('data/nodecompat-data.json', ['html']);
 	gulp.watch('src/mixins/*.jade', ['html']);
 	gulp.watch('src/styles/*.styl', ['css']);
+	gulp.watch('src/scripts/*.js', ['js']);
 	gulp.watch('src/images/*', ['images']);
 });
