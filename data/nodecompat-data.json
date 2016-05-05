@@ -80,19 +80,6 @@
 		"alias": "upstream.current"
 	    }
 	},
-	"opensuse": {
-	    "todo": {
-		"stable": null,
-		"lts": null
-	    },
-	    "tumbleweed": {
-		"stable": null,
-		"lts": null
-	    }
-	},
-	"suse": {
-
-	},
 	"upstream": {
 	    "current": {
 		"stable": "6.0",
@@ -205,27 +192,6 @@
 		"current": {
 		    "prettyname": "<em>Rolling release</em>"
 		}
-	    }
-	},
-	"opensuse": {
-	    "prettyname": "openSUSE",
-	    "stabledesc": "TODO",
-	    "ltsdesc": "TODO",
-	    "versions": {
-		"todo": {
-		    "prettyname": "TODO"
-		},
-		"tumbleweed": {
-		    "prettyname": "<em>Rolling release</em>"
-		}
-	    }
-	},
-	"suse": {
-	    "prettyname": "SUSE Linux Enterprise",
-	    "stabledesc": "TODO",
-	    "ltsdesc": "TODO",
-	    "versions": {
-		
 	    }
 	},
 	"upstream": {
