@@ -11,21 +11,21 @@
 	    }
 	},
 	"ubuntu": {
-	    "xenial": {
+	    "precise": {
 		"stable": null,
-		"lts": "4.2"
-	    },
-	    "wily": {
-		"stable": null,
-		"lts": "0.10"
+		"lts": "0.6"
 	    },
 	    "trusty": {
 		"stable": null,
 		"lts": "0.10"
 	    },
-	    "precise": {
+	    "wily": {
 		"stable": null,
-		"lts": "0.6"
+		"lts": "0.10"
+	    },
+	    "xenial": {
+		"stable": null,
+		"lts": "4.2"
 	    }
 	},
 	"fedora": {
@@ -106,17 +106,17 @@
 	    "stabledesc": "<code>*-backports</code>",
 	    "ltsdesc": "<code>universe</code>",
 	    "versions": {
-		"xenial": {
-		    "prettyname": "16.04 LTS"
-		},
-		"wily": {
-		    "prettyname": "15.10"
+		"precise": {
+		    "prettyname": "12.04 LTS"
 		},
 		"trusty": {
 		    "prettyname": "14.04 LTS"
 		},
-		"precise": {
-		    "prettyname": "12.04 LTS"
+		"wily": {
+		    "prettyname": "15.10"
+		},
+		"xenial": {
+		    "prettyname": "16.04 LTS"
 		}
 	    }
 	},
