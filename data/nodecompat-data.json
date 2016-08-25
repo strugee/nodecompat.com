@@ -19,10 +19,6 @@
 		"stable": null,
 		"lts": "0.10"
 	    },
-	    "wily": {
-		"stable": null,
-		"lts": "0.10"
-	    },
 	    "xenial": {
 		"stable": null,
 		"lts": "4.2"
@@ -111,9 +107,6 @@
 		},
 		"trusty": {
 		    "prettyname": "14.04 LTS"
-		},
-		"wily": {
-		    "prettyname": "15.10"
 		},
 		"xenial": {
 		    "prettyname": "16.04 LTS"
