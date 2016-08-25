@@ -25,6 +25,14 @@
 	    }
 	},
 	"fedora": {
+	    "25": {
+		"stable": null,
+		"lts": "6.3.1"
+	    },
+	    "24": {
+		"stable": null,
+		"lts": "4.5.0"
+	    },
 	    "23": {
 		"stable": null,
 		"lts": "0.10"
@@ -114,6 +122,12 @@
 	    "stabledesc": null,
 	    "ltsdesc": "Main repo",
 	    "versions": {
+		"25": {
+		    "prettyname": "25"
+		},
+		"24": {
+		    "prettyname": "24"
+		},
 		"23": {
 		    "prettyname": "23"
 		}
