@@ -28,10 +28,6 @@
 	    "23": {
 		"stable": null,
 		"lts": "0.10"
-	    },
-	    "22": {
-		"stable": null,
-		"lts": "0.10"
 	    }
 	},
 	"redhat": {
@@ -120,12 +116,6 @@
 	    "versions": {
 		"23": {
 		    "prettyname": "23"
-		},
-		"22": {
-		    "prettyname": "22"
-		},
-		"21": {
-		    "prettyname": "21"
 		}
 	    }
 	},
