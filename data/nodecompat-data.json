@@ -27,7 +27,7 @@
 	"fedora": {
 	    "25": {
 		"stable": null,
-		"lts": "6.3.1"
+		"lts": "6.4.0"
 	    },
 	    "24": {
 		"stable": null,
