@@ -22,6 +22,10 @@
 	    "xenial": {
 		"stable": null,
 		"lts": "4.2"
+	    },
+	    "yakkety": {
+		"stable": null,
+		"lts": "4.2"
 	    }
 	},
 	"fedora": {
@@ -82,8 +86,8 @@
 	},
 	"upstream": {
 	    "current": {
-		"stable": "6.6.0",
-		"lts": "4.5.0"
+		"stable": "7.2",
+		"lts": "6.9"
 	    }
 	}
     },
@@ -114,6 +118,9 @@
 		},
 		"xenial": {
 		    "prettyname": "16.04 LTS"
+		},
+		"yakkety": {
+		    "prettyname": "16.10"
 		}
 	    }
 	},
