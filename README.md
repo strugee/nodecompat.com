@@ -1,5 +1,7 @@
 # nodecompat.com
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/strugee/nodecompat.com.svg)](https://greenkeeper.io/)
+
 Quoting from the main page:
 
 > Have a list of Linux distributions you'd like to run on, but not sure what Node versions you have to support? Or maybe that, but in reverse? No problem. nodecompat.com has you covered.
