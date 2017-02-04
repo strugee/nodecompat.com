@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/strugee/nodecompat.com#readme",
   "dependencies": {
-    "browserify": "^13.0.0",
+    "browserify": "^14.0.0",
     "es6-browserify": "0.0.7",
     "gulp": "^3.9.1",
     "gulp-gh-pages": "^0.5.4",
