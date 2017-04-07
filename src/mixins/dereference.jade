@@ -6,6 +6,6 @@ mixin dereference(versionString, nodeFlavor, dataset)
 		if (dataset[targetDistro][targetRelease][nodeFlavor] !== null) {
 			output = dataset[targetDistro][targetRelease][nodeFlavor];
 		} else {
-			output = "<em class='none'>–</em>";
+			output = "–";
 		}
 	!= output
