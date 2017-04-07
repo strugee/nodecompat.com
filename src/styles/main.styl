@@ -20,6 +20,12 @@ h2, table {
 	color: #43853d;
 }
 
+#distro-container {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
 .distro-block {
 	margin: 20px;
 	padding: 10px;
@@ -27,16 +33,18 @@ h2, table {
 	border: 1px solid #b0b0b0;
 	border-radius: 20px;
 	width: 400px;
-	height: 160px;
 }
 
-#distro-container {
-	display: flex;
-	flex-flow: row wrap;
+td {
+	padding: 1px;
+	padding-right: 4px;
+	text-align: center;
+	min-width: 30px;
 }
 
 .none {
 	color: grey;
+	font-style: normal;
 }
 
 footer {
