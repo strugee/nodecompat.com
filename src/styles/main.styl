@@ -4,7 +4,6 @@ body {
 }
 
 #container {
-	display: block;
 	margin: auto;
 	max-width: 924px;
 }
@@ -18,7 +17,6 @@ h1, p {
 }
 
 .distro-block {
-	display: inline-block;
 	margin: 20px;
 	padding: 10px;
 	background: linear-gradient( 0deg, white, #f5f5f5 );
@@ -26,6 +24,11 @@ h1, p {
 	border-radius: 20px;
 	width: 400px;
 	height: 160px;
+}
+
+#distro-container {
+	display: flex;
+	flex-flow: row wrap;
 }
 
 .none {
