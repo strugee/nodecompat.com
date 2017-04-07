@@ -5,6 +5,8 @@ var rename = require('gulp-rename');
 var ghPages = require('gulp-gh-pages');
 var browserify = require('browserify');
 var source = require('vinyl-source-stream');
+var http = require('http');
+var ecstatic = require('ecstatic');
 
 gulp.task('html', function() {
 	return gulp.src('src/*.jade')
@@ -40,6 +42,12 @@ gulp.task('build', ['html', 'css', 'js', 'images']);
 gulp.task('deploy', ['build'], function() {
 	return gulp.src('dist/**/*')
 	           .pipe(ghPages());
+});
+
+gulp.task('serve', ['watch'], function() {
+	http.createServer(
+		ecstatic({ root: __dirname + '/dist' })
+	).listen(8080);
 });
 
 gulp.task('watch', ['build'], function() {
