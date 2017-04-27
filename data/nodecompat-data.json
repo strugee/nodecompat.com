@@ -6,7 +6,7 @@
 		"lts": null
 	    },
 	    "jessie": {
-		"stable": null,
+		"stable": "4.7",
 		"lts": "0.10"
 	    }
 	},
