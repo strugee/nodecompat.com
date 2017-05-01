@@ -47,7 +47,7 @@ gulp.task('deploy', ['build'], function() {
 gulp.task('serve', ['watch'], function() {
 	http.createServer(
 		ecstatic({ root: __dirname + '/dist' })
-	).listen(8080);
+	).listen(process.env.PORT || 8080);
 });
 
 gulp.task('watch', ['build'], function() {
