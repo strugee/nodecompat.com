@@ -11,10 +11,6 @@
 	    }
 	},
 	"ubuntu": {
-	    "precise": {
-		"stable": null,
-		"lts": "0.6"
-	    },
 	    "trusty": {
 		"stable": null,
 		"lts": "0.10"
@@ -114,9 +110,6 @@
 	    "stabledesc": "<code>*-backports</code>",
 	    "ltsdesc": "<code>universe</code>",
 	    "versions": {
-		"precise": {
-		    "prettyname": "12.04 LTS"
-		},
 		"trusty": {
 		    "prettyname": "14.04 LTS"
 		},
