@@ -15,15 +15,15 @@
 	    }
 	},
 	"ubuntu": {
+            "artful": {
+                "stable": null,
+                "lts": "6.11"
+            },
 	    "trusty": {
 		"stable": null,
 		"lts": "0.10"
 	    },
 	    "xenial": {
-		"stable": null,
-		"lts": "4.2"
-	    },
-	    "yakkety": {
 		"stable": null,
 		"lts": "4.2"
 	    },
@@ -117,14 +117,14 @@
 	    "stabledesc": "<code>*-backports</code>",
 	    "ltsdesc": "<code>universe</code>",
 	    "versions": {
+		"artful": {
+		    "prettyname": "17.10"
+		},
 		"trusty": {
 		    "prettyname": "14.04 LTS"
 		},
 		"xenial": {
 		    "prettyname": "16.04 LTS"
-		},
-		"yakkety": {
-		    "prettyname": "16.10"
 		},
 		"zesty": {
 		    "prettyname": "17.04"
