@@ -57,7 +57,7 @@
 	    },
 	    "epel7": {
 		"stable": null,
-		"lts": "0.10"
+		"lts": "6.11"
 	    }
 	},
 	"centos": {
