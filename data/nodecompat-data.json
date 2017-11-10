@@ -15,10 +15,6 @@
 	    }
 	},
 	"ubuntu": {
-            "artful": {
-                "stable": null,
-                "lts": "6.11"
-            },
 	    "trusty": {
 		"stable": null,
 		"lts": "0.10"
@@ -30,7 +26,11 @@
 	    "zesty": {
 	        "stable": null,
 	        "lts": "4.7"
-	    }
+	    },
+            "artful": {
+                "stable": null,
+                "lts": "6.11"
+            }
 	},
 	"fedora": {
 	    "26": {
