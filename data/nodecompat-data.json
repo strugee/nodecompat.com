@@ -6,8 +6,12 @@
 		"lts": null
 	    },
 	    "jessie": {
-		"stable": "4.7",
+		"stable": "4.8",
 		"lts": "0.10"
+	    },
+	    "stretch": {
+		"stable": null,
+		"lts": "5.8"
 	    }
 	},
 	"ubuntu": {
@@ -102,6 +106,9 @@
 		},
 		"jessie": {
 		    "prettyname": "8"
+		},
+		"stretch": {
+		    "prettyname": "9"
 		}
 	    }
 	},
