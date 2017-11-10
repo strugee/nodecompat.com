@@ -33,17 +33,13 @@
 	    }
 	},
 	"fedora": {
+	    "26": {
+		"stable": null,
+		"lts": "6.11"
+	    },
 	    "25": {
 		"stable": null,
-		"lts": "6.4.0"
-	    },
-	    "24": {
-		"stable": null,
-		"lts": "4.5.0"
-	    },
-	    "23": {
-		"stable": null,
-		"lts": "0.10"
+		"lts": "6.11"
 	    }
 	},
 	"redhat": {
@@ -136,14 +132,11 @@
 	    "stabledesc": null,
 	    "ltsdesc": "Main repo",
 	    "versions": {
+		"26": {
+		    "prettyname": "26"
+		},
 		"25": {
 		    "prettyname": "25"
-		},
-		"24": {
-		    "prettyname": "24"
-		},
-		"23": {
-		    "prettyname": "23"
 		}
 	    }
 	},
