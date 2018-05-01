@@ -12,6 +12,23 @@ html
 		link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css')
 		link(rel='stylesheet', href='css/main.css')
 		script(src='scripts/app.js', type='text/javascript', async)
+		// Matomo
+		// Note that this Matomo instance is self-hosted and so doesn't leak metadata. Also, critically, it respects Do Not Track.
+		script(type='text/javascript').
+			var _paq = _paq || [];
+			/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+			_paq.push(['trackPageView']);
+			_paq.push(['enableLinkTracking']);
+			(function() {
+				var u="//piwik.strugee.net/";
+				_paq.push(['setTrackerUrl', u+'piwik.php']);
+				_paq.push(['setSiteId', '9']);
+				var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+				g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+			})();
+		noscript
+			p <img src="//piwik.strugee.net/piwik.php?idsite=9&rec=1" style="border:0;" alt="" />
+		// End Matomo Code
 	body
 		div#container
 			h1 <span id="node">node</span>compat.com
