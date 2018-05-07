@@ -29,14 +29,19 @@
             }
 	},
 	"fedora": {
+	    "28": {
+		"stable": null,
+		"lts": "8.11"
+	    },
 	    "27": {
 		"stable": null,
-		"lts": "8.9"
+		"lts": "8.11"
 	    },
 	    "26": {
 		"stable": null,
 		"lts": "6.13"
-	    }
+	    },
+	
 	},
 	"redhat": {
 	    "6": {
@@ -125,14 +130,14 @@
 	    "stabledesc": null,
 	    "ltsdesc": "Main repo",
 	    "versions": {
+		"28": {
+		    "prettyname": "28"
+		},
 		"27": {
 		    "prettyname": "27"
 		},
 		"26": {
 		    "prettyname": "26"
-		},
-		"25": {
-		    "prettyname": "25"
 		}
 	    }
 	},
