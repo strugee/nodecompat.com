@@ -82,8 +82,8 @@
 	},
 	"upstream": {
 	    "current": {
-		"stable": "10.0",
-		"lts": "8.11"
+		"stable": "11.0",
+		"lts": "8.12"
 	    }
 	}
     },
