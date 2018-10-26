@@ -19,9 +19,9 @@
 		"stable": null,
 		"lts": "4.2"
 	    },
-            "artful": {
+            "bionic": {
                 "stable": null,
-                "lts": "6.11"
+                "lts": "8.10"
             }
 	},
 	"fedora": {
@@ -106,8 +106,8 @@
 	    "stabledesc": "<code>*-backports</code>",
 	    "ltsdesc": "<code>universe</code>",
 	    "versions": {
-		"artful": {
-		    "prettyname": "17.10"
+		"bionic": {
+		    "prettyname": "18.04 LTS"
 		},
 		"trusty": {
 		    "prettyname": "14.04 LTS"
