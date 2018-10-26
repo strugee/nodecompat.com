@@ -10,7 +10,7 @@
 		"lts": "0.10"
 	    },
 	    "stretch": {
-		"stable": null,
+		"stable": "8.11",
 		"lts": "4.8"
 	    }
 	},
