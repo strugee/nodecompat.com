@@ -1,10 +1,6 @@
 {
     "versions": {
 	"debian": {
-	    "wheezy": {
-		"stable": "0.10",
-		"lts": null
-	    },
 	    "jessie": {
 		"stable": "4.8",
 		"lts": "0.10"
@@ -97,9 +93,6 @@
 	    "stabledesc": "<code>*-backports</code>",
             "ltsdesc": "<code>main</code>",
 	    "versions": {
-		"wheezy": {
-		    "prettyname": "7"
-		},
 		"jessie": {
 		    "prettyname": "8"
 		},
