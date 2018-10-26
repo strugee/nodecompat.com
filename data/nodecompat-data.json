@@ -193,7 +193,7 @@
 	},
 	"upstream": {
 	    "prettyname": "Node.js Foundation upstream",
-	    "stabledesc": "Stable",
+	    "stabledesc": "Current",
 	    "ltsdesc": "LTS",
 	    "versions": {
 		"current": {
