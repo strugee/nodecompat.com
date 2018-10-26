@@ -37,7 +37,12 @@ gulp.task('images', function() {
 	           .pipe(gulp.dest('dist/images'));
 });
 
-gulp.task('build', ['html', 'css', 'js', 'images']);
+gulp.task('misc', function() {
+        return gulp.src('CNAME')
+                   .pipe(gulp.dest('dist/'));
+});
+
+gulp.task('build', ['html', 'css', 'js', 'images', 'misc']);
 
 gulp.task('deploy', ['build'], function() {
 	return gulp.src('dist/**/*')
