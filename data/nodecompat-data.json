@@ -32,10 +32,6 @@
 	    "28": {
 		"stable": null,
 		"lts": "8.12"
-	    },
-	    "27": {
-		"stable": null,
-		"lts": "8.12"
 	    }
 	},
 	"redhat": {
@@ -127,9 +123,6 @@
 		},
 		"28": {
 		    "prettyname": "28"
-		},
-		"27": {
-		    "prettyname": "27"
 		}
 	    }
 	},
