@@ -1,0 +1,16 @@
+# TEAM
+
+	Code & ops: AJ Jordan
+	Contact: alex [at] strugee.net
+	pump.io: alex@pump.strugee.net
+	Twitter: @strugee2
+	From: Seattle, Washington, United States
+
+# THANKS
+
+	GitHub, for the repository & page hosting
+
+# TECHNOLOGY COLOPHON
+
+	HTML5, CSS3
+	Jade, Stylus, Gulp
