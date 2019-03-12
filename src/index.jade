@@ -31,12 +31,12 @@ html
 				img(src='//piwik.strugee.net/piwik.php?idsite=9&rec=1', style='border:0;', alt='')
 		// End Matomo Code
 	body
-		div#container
+		#container
 			h1 <span id="node">node</span>compat.com
 			p Have a list of Linux distributions you'd like to run on, but not sure what Node versions you have to support? Or maybe that, but in reverse? No problem. nodecompat.com has you covered.
 			#distro-container
 				each data, distro in versions
-					div.distro-block
+					.distro-block
 						h2= distros[distro].prettyname
 						table
 							thead
