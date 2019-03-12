@@ -38,7 +38,7 @@ gulp.task('images', function() {
 });
 
 gulp.task('misc', function() {
-        return gulp.src(['CNAME', 'src/misc/*'])
+        return gulp.src('src/misc/*')
                    .pipe(gulp.dest('dist/'));
 });
 
