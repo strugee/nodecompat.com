@@ -7,11 +7,25 @@ var browserify = require('browserify');
 var source = require('vinyl-source-stream');
 var http = require('http');
 var ecstatic = require('ecstatic');
+var fs = require('fs');
+var eos = require('end-of-stream');
 
-gulp.task('html', function() {
-	return gulp.src('src/*.jade')
-		   .pipe(jade({ data: require('./data/nodecompat-data.json') }))
-	           .pipe(gulp.dest('dist'));
+gulp.task('html', function(cb) {
+	// Start streaming files from disk early
+	var stream = gulp.src('src/*.jade')
+
+	// XXX should we like... be pulling this into the gulp stream or something? Idk
+	fs.readFile('./data/nodecompat-data.json', function(err, buf) {
+		if (err) return cb(err);
+
+		var data = JSON.parse(buf.toString());
+
+		stream.pipe(jade({ data: require('./data/nodecompat-data.json') }))
+		      .pipe(gulp.dest('dist'));
+
+		// XXX async-done uses {error: false}, maybe we should too?
+		eos(stream, cb);
+	});
 });
 
 gulp.task('css', function() {
