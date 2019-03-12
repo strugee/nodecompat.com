@@ -25,9 +25,9 @@
             }
 	},
 	"fedora": {
-	    "28": {
+	    "29": {
 		"stable": null,
-		"lts": "10.11"
+		"lts": "10.15"
 	    },
 	    "28": {
 		"stable": null,
