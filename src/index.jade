@@ -11,7 +11,7 @@ html(lang='en')
 		link(rel='icon', href='images/favicon.ico', type='image/x-icon')
 		link(href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css')
 		link(rel='stylesheet', href='css/main.css')
-		script(src='scripts/app.js', type='text/javascript', async)
+		script(src='scripts/app.js', async)
 	body
 		#container
 			h1 <span id="node">node</span>compat.com
@@ -39,7 +39,7 @@ html(lang='en')
 				p Node.js and the Node.js logo are trademarks of Joyent, Inc. and are used with its permission. nodecompat.com is not endorsed by or affiliated with Joyent.
 		// Matomo
 		// Note that this Matomo instance is self-hosted and so doesn't leak metadata. Also, critically, it respects Do Not Track.
-		script(type='text/javascript').
+		script.
 			var _paq = _paq || [];
 			/* tracker methods like "setCustomDimension" should be called before "trackPageView" */
 			_paq.push(['trackPageView']);
