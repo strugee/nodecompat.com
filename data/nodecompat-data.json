@@ -1,198 +1,198 @@
 {
-    "versions": {
-	"debian": {
-	    "jessie": {
-		"stable": "4.8",
-		"lts": "0.10"
-	    },
-	    "stretch": {
-		"stable": "8.11",
-		"lts": "4.8"
-	    }
+	"versions": {
+		"debian": {
+			"jessie": {
+				"stable": "4.8",
+				"lts": "0.10"
+			},
+			"stretch": {
+				"stable": "8.11",
+				"lts": "4.8"
+			}
+		},
+		"ubuntu": {
+			"trusty": {
+				"stable": null,
+				"lts": "0.10"
+			},
+			"xenial": {
+				"stable": null,
+				"lts": "4.2"
+			},
+			"bionic": {
+				"stable": null,
+				"lts": "8.10"
+			}
+		},
+		"fedora": {
+			"28": {
+				"stable": null,
+				"lts": "8.12"
+			},
+			"29": {
+				"stable": null,
+				"lts": "10.15"
+			}
+		},
+		"redhat": {
+			"6": {
+				"stable": null,
+				"lts": null
+			},
+			"7": {
+				"stable": null,
+				"lts": null
+			},
+			"epel6": {
+				"stable": null,
+				"lts": "0.10"
+			},
+			"epel7": {
+				"stable": null,
+				"lts": "6.16"
+			}
+		},
+		"centos": {
+			"6": {
+				"alias": "redhat.6"
+			},
+			"7": {
+				"alias": "redhat.7"
+			},
+			"epel6": {
+				"alias": "redhat.epel6"
+			},
+			"epel7": {
+				"alias": "redhat.epel7"
+			}
+		},
+		"archlinux": {
+			"current": {
+				"alias": "upstream.current"
+			}
+		},
+		"gentoo": {
+			"current": {
+				"alias": "upstream.current"
+			}
+		},
+		"upstream": {
+			"current": {
+				"stable": "11.11",
+				"lts": "10.15"
+			}
+		}
 	},
-	"ubuntu": {
-	    "trusty": {
-		"stable": null,
-		"lts": "0.10"
-	    },
-	    "xenial": {
-		"stable": null,
-		"lts": "4.2"
-	    },
-            "bionic": {
-                "stable": null,
-                "lts": "8.10"
-            }
-	},
-	"fedora": {
-	    "29": {
-		"stable": null,
-		"lts": "10.15"
-	    },
-	    "28": {
-		"stable": null,
-		"lts": "8.12"
-	    }
-	},
-	"redhat": {
-	    "6": {
-		"stable": null,
-		"lts": null
-	    },
-	    "epel6": {
-		"stable": null,
-		"lts": "0.10"
-	    },
-	    "7": {
-		"stable": null,
-		"lts": null
-	    },
-	    "epel7": {
-		"stable": null,
-		"lts": "6.16"
-	    }
-	},
-	"centos": {
-	    "6": {
-		"alias": "redhat.6"
-	    },
-	    "epel6": {
-		"alias": "redhat.epel6"
-	    },
-	    "7": {
-		"alias": "redhat.7"
-	    },
-	    "epel7": {
-		"alias": "redhat.epel7"
-	    }
-	},
-	"archlinux": {
-	    "current": {
-		"alias": "upstream.current"
-	    }
-	},
-	"gentoo": {
-	    "current": {
-		"alias": "upstream.current"
-	    }
-	},
-	"upstream": {
-	    "current": {
-		"stable": "11.11",
-		"lts": "10.15"
-	    }
+	"distros": {
+		"debian": {
+			"prettyname": "Debian GNU/Linux",
+			"stabledesc": "<code>*-backports</code>",
+			"ltsdesc": "<code>main</code>",
+			"versions": {
+				"jessie": {
+					"prettyname": "8"
+				},
+				"stretch": {
+					"prettyname": "9"
+				}
+			}
+		},
+		"ubuntu": {
+			"prettyname": "Ubuntu",
+			"stabledesc": "<code>*-backports</code>",
+			"ltsdesc": "<code>universe</code>",
+			"versions": {
+				"bionic": {
+					"prettyname": "18.04 LTS"
+				},
+				"trusty": {
+					"prettyname": "14.04 LTS"
+				},
+				"xenial": {
+					"prettyname": "16.04 LTS"
+				}
+			}
+		},
+		"fedora": {
+			"prettyname": "Fedora",
+			"stabledesc": null,
+			"ltsdesc": "Main repo",
+			"versions": {
+				"28": {
+					"prettyname": "28"
+				},
+				"29": {
+					"prettyname": "29"
+				}
+			}
+		},
+		"redhat": {
+			"prettyname": "Red Hat Enterprise Linux",
+			"stabledesc": null,
+			"ltsdesc": "Main repo",
+			"versions": {
+				"6": {
+					"prettyname": "6"
+				},
+				"7": {
+					"prettyname": "7"
+				},
+				"epel6": {
+					"prettyname": "6 + EPEL"
+				},
+				"epel7": {
+					"prettyname": "7 + EPEL"
+				}
+			}
+		},
+		"centos": {
+			"prettyname": "CentOS",
+			"stabledesc": null,
+			"ltsdesc": "Main repo",
+			"versions": {
+				"6": {
+					"prettyname": "6"
+				},
+				"7": {
+					"prettyname": "7"
+				},
+				"epel6": {
+					"prettyname": "6 + EPEL"
+				},
+				"epel7": {
+					"prettyname": "7 + EPEL"
+				}
+			}
+		},
+		"archlinux": {
+			"prettyname": "Arch Linux",
+			"stabledesc": "<code>[community]</code>",
+			"ltsdesc": null,
+			"versions": {
+				"current": {
+					"prettyname": "<em>Rolling release</em>"
+				}
+			}
+		},
+		"gentoo": {
+			"prettyname": "Gentoo Linux",
+			"stabledesc": "Main repo",
+			"ltsdesc": null,
+			"versions": {
+				"current": {
+					"prettyname": "<em>Rolling release</em>"
+				}
+			}
+		},
+		"upstream": {
+			"prettyname": "Node.js Foundation upstream",
+			"stabledesc": "Current",
+			"ltsdesc": "LTS",
+			"versions": {
+				"current": {
+					"prettyname": "<em>Upstream</em>"
+				}
+			}
+		}
 	}
-    },
-    "distros": {
-	"debian": {
-	    "prettyname": "Debian GNU/Linux",
-	    "stabledesc": "<code>*-backports</code>",
-            "ltsdesc": "<code>main</code>",
-	    "versions": {
-		"jessie": {
-		    "prettyname": "8"
-		},
-		"stretch": {
-		    "prettyname": "9"
-		}
-	    }
-	},
-	"ubuntu": {
-	    "prettyname": "Ubuntu",
-	    "stabledesc": "<code>*-backports</code>",
-	    "ltsdesc": "<code>universe</code>",
-	    "versions": {
-		"bionic": {
-		    "prettyname": "18.04 LTS"
-		},
-		"trusty": {
-		    "prettyname": "14.04 LTS"
-		},
-		"xenial": {
-		    "prettyname": "16.04 LTS"
-		}
-	    }
-	},
-	"fedora": {
-	    "prettyname": "Fedora",
-	    "stabledesc": null,
-	    "ltsdesc": "Main repo",
-	    "versions": {
-		"29": {
-		    "prettyname": "29"
-		},
-		"28": {
-		    "prettyname": "28"
-		}
-	    }
-	},
-	"redhat": {
-	    "prettyname": "Red Hat Enterprise Linux",
-	    "stabledesc": null,
-	    "ltsdesc": "Main repo",
-	    "versions": {
-		"6": {
-		    "prettyname": "6"
-		},
-		"epel6": {
-		    "prettyname": "6 + EPEL"
-		},
-		"7": {
-		    "prettyname": "7"
-		},
-		"epel7": {
-		    "prettyname": "7 + EPEL"
-		}
-	    }
-	},
-	"centos": {
-	    "prettyname": "CentOS",
-	    "stabledesc": null,
-	    "ltsdesc": "Main repo",
-	    "versions": {
-		"6": {
-		    "prettyname": "6"
-		},
-		"epel6": {
-		    "prettyname": "6 + EPEL"
-		},
-		"7": {
-		    "prettyname": "7"
-		},
-		"epel7": {
-		    "prettyname": "7 + EPEL"
-		}
-	    }
-	},
-	"archlinux": {
-	    "prettyname": "Arch Linux",
-	    "stabledesc": "<code>[community]</code>",
-	    "ltsdesc": null,
-	    "versions": {
-		"current": {
-		    "prettyname": "<em>Rolling release</em>"
-		}
-	    }
-	},
-	"gentoo": {
-	    "prettyname": "Gentoo Linux",
-	    "stabledesc": "Main repo",
-	    "ltsdesc": null,
-	    "versions": {
-		"current": {
-		    "prettyname": "<em>Rolling release</em>"
-		}
-	    }
-	},
-	"upstream": {
-	    "prettyname": "Node.js Foundation upstream",
-	    "stabledesc": "Current",
-	    "ltsdesc": "LTS",
-	    "versions": {
-		"current": {
-		    "prettyname": "<em>Upstream</em>"
-		}
-	    }
-	}
-    }
 }
