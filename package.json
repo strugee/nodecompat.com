@@ -27,7 +27,12 @@
     "vinyl-source-stream": "^1.1.0"
   },
   "devDependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "concat-stream": "^2.0.0",
     "ecstatic": "^2.1.0",
-    "end-of-stream": "^1.4.1"
+    "end-of-stream": "^1.4.1",
+    "lodash.merge": "^4.6.1",
+    "nodejs-latest": "^1.1.0",
+    "run-parallel": "^1.1.9"
   }
 }
