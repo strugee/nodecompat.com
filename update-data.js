@@ -21,6 +21,7 @@
 
 var https = require('https'),
     fs = require('fs'),
+    assert = require('assert'),
     latestNode = require('nodejs-latest'),
     parallel = require('run-parallel'),
     concat = require('concat-stream'),
@@ -56,10 +57,53 @@ parallel({
 			cb(err, {'upstream': {'current': obj}});
 		});
 	},
+	ubuntu: function(cb) {
+		// XXX exclude Ubuntu releases that are EOL except for Ubuntu Advantage customers
+		// Precise Pangolin, I'm looking at you
+		https.get('https://launchpad.net/ubuntu/+source/nodejs', function(res) {
+			res.on('error', cb);
+		
+			assert.equal(res.statusCode, 200);
+		
+			res.pipe(concat(function(buf) {
+				var $ = cheerio.load(buf.toString());
+		
+				var set = {};
+				var curDistro;
+		
+				$('#packages_list tbody').children().each(function(idx, el) {
+					// Dunno what these are but we gotta filter it out for some reason
+					if ((el.attribs.id || '').includes('pub')) return;
+					if ($(el).text() === '') return;
+		
+					if (el.attribs.class.includes('section-heading')) {
+						if ($(el).text().includes('active development')) return;
+						var fullname = $('td a', el).first().text();
+						curDistro = fullname.split(' ')[1].toLowerCase();
+					} else {
+						// Check if we're processing development versions
+						if (!curDistro) return;
+						var data = $(el).text().split(' ')
+						                       .map(s => s.trim())
+						                       .filter(s => s !== '');
+						var version = data[0].split('.').slice(0, 2).join('.');
+		
+						if (!set[curDistro]) {
+							set[curDistro] = {lts: version, stable: null};
+						} else {
+							assert.equal(set[curDistro].lts, version);
+						}
+					}
+		
+				});
+				cb(null, {ubuntu: set});
+			}));
+		});
+	},
 	fedora: function(cb) {
 		// XXX this API returns unreleased versions of Fedora
 		https.get('https://apps.fedoraproject.org/packages/fcomm_connector/bodhi/query/query_active_releases/%7B%22filters%22:%7B%22package%22:%22nodejs%22%7D,%22rows_per_page%22:10,%22start_row%22:0%7D', function(res) {
-			res.on('error', e => { throw e; });
+			res.on('error', cb);
 
 			res.pipe(concat(function(buf) {
 				var response = JSON.parse(buf.toString());
