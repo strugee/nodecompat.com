@@ -78,7 +78,7 @@
 		},
 		"upstream": {
 			"current": {
-				"stable": "11.11",
+				"stable": "11.12",
 				"lts": "10.15"
 			}
 		}
