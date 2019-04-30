@@ -7,11 +7,11 @@
   * upstream
   * Fedora
   * RHEL + EPEL (in the Fedora handler)
+  * Ubuntu
 
   That leaves the following to be manually checked:
 
   * Debian
-  * Ubuntu
 
   The rest are aliased to various other values.
 
