@@ -62,20 +62,20 @@ parallel({
 		// Precise Pangolin, I'm looking at you
 		https.get('https://launchpad.net/ubuntu/+source/nodejs', function(res) {
 			res.on('error', cb);
-		
+
 			assert.equal(res.statusCode, 200);
-		
+
 			res.pipe(concat(function(buf) {
 				var $ = cheerio.load(buf.toString());
-		
+
 				var set = {};
 				var curDistro;
-		
+
 				$('#packages_list tbody').children().each(function(idx, el) {
 					// Dunno what these are but we gotta filter it out for some reason
 					if ((el.attribs.id || '').includes('pub')) return;
 					if ($(el).text() === '') return;
-		
+
 					if (el.attribs.class.includes('section-heading')) {
 						if ($(el).text().includes('active development')) return;
 						var fullname = $('td a', el).first().text();
@@ -87,14 +87,13 @@ parallel({
 						                       .map(s => s.trim())
 						                       .filter(s => s !== '');
 						var version = data[0].split('.').slice(0, 2).join('.');
-		
+
 						if (!set[curDistro]) {
 							set[curDistro] = {lts: version, stable: null};
 						} else {
 							assert.equal(set[curDistro].lts, version);
 						}
 					}
-		
 				});
 				cb(null, {ubuntu: set});
 			}));
