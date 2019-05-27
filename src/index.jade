@@ -18,7 +18,7 @@ html(lang='en')
 			#distro-container
 				each data, distro in versions
 					.distro-block
-						h2= distros[distro].prettyname
+						h2!= distros[distro].prettyname
 						table
 							thead
 								tr
