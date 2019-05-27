@@ -17,6 +17,15 @@
 
   Note: this program will not remove information for obsolete distributions, except for Ubuntu.
 
+  Instructions for running:
+
+  1. Run ./update-data.js
+  2. Fill in `prettyname` descriptions in the JSON manually
+  3. Run `gulp serve` and check the results
+  4. Double-check that distributions are ordered correctly in the
+     tables (e.g. that 18.10 comes *before* 19.04)
+  5. Commit and deploy
+
 */
 
 var https = require('https'),
