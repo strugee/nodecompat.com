@@ -22,6 +22,10 @@ table {
   flex-flow: row wrap;
   justify-content: center;
 }
+#esm-note {
+  color: #727272;
+  font-size: 80%;
+}
 .distro-block {
   margin: 20px;
   padding: 5px;
