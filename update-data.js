@@ -15,7 +15,7 @@
 
   The rest are aliased to various other values.
 
-  Note: this program will not remove information for obsolete distributions.
+  Note: this program will not remove information for obsolete distributions, except for Ubuntu.
 
 */
 
@@ -166,6 +166,11 @@ parallel({
 
 	var data = results.datafile;
 	delete results.datafile;
+
+	// Delete obsolete Ubuntu distro series
+	for (var i in data.versions.ubuntu) {
+		if (!results.ubuntu.ubuntu[i]) delete data.versions.ubuntu[i];
+	}
 
 	Object.values(results).map(el => Array.isArray(el) ? el : [el])
 	                      .reduce((a, b) => a.concat(b))
