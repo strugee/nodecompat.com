@@ -11,10 +11,6 @@
 			}
 		},
 		"ubuntu": {
-			"trusty": {
-				"stable": null,
-				"lts": "0.10"
-			},
 			"xenial": {
 				"stable": null,
 				"lts": "4.2"
@@ -22,6 +18,14 @@
 			"bionic": {
 				"stable": null,
 				"lts": "8.10"
+			},
+			"cosmic": {
+				"lts": "8.11",
+				"stable": null
+			},
+			"disco": {
+				"lts": "10.15",
+				"stable": null
 			}
 		},
 		"fedora": {
@@ -81,7 +85,7 @@
 		},
 		"upstream": {
 			"current": {
-				"stable": "12.1",
+				"stable": "12.3",
 				"lts": "10.15"
 			}
 		}
@@ -105,14 +109,17 @@
 			"stabledesc": "<code>*-backports</code>",
 			"ltsdesc": "<code>universe</code>",
 			"versions": {
+				"xenial": {
+					"prettyname": "16.04 LTS"
+				},
 				"bionic": {
 					"prettyname": "18.04 LTS"
 				},
-				"trusty": {
-					"prettyname": "14.04 LTS"
+				"cosmic": {
+					"prettyname": "18.10"
 				},
-				"xenial": {
-					"prettyname": "16.04 LTS"
+				"disco": {
+					"prettyname": "19.04"
 				}
 			}
 		},
