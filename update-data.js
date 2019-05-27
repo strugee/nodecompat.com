@@ -146,5 +146,5 @@ parallel({
 	                      })
 	                      .forEach(obj => merge(data.versions, obj));
 
-	fs.writeFileSync('./data/nodecompat-data.json', JSON.stringify(data, null, '\t'));
+	fs.writeFileSync('./data/nodecompat-data.json', JSON.stringify(data, null, '\t') + '\n');
 });
