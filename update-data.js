@@ -26,7 +26,8 @@ var https = require('https'),
     parallel = require('run-parallel'),
     concat = require('concat-stream'),
     cheerio = require('cheerio'),
-    merge = require('lodash.merge');
+    merge = require('lodash.merge'),
+    csvparseSync = require('csv-parse/lib/sync');
 
 function normalizeVersion(version) {
 	if (!version) return;
@@ -60,43 +61,79 @@ parallel({
 	ubuntu: function(cb) {
 		// XXX exclude Ubuntu releases that are EOL except for Ubuntu Advantage customers
 		// Precise Pangolin, I'm looking at you
-		https.get('https://launchpad.net/ubuntu/+source/nodejs', function(res) {
-			res.on('error', cb);
+		parallel({
+			distroData: function(cb) {
+				https.get('https://git.launchpad.net/ubuntu/+source/distro-info-data/plain/ubuntu.csv', function(res) {
+					res.on('error', cb);
 
-			assert.equal(res.statusCode, 200);
+					assert.equal(res.statusCode, 200);
 
-			res.pipe(concat(function(buf) {
-				var $ = cheerio.load(buf.toString());
-
-				var set = {};
-				var curDistro;
-
-				$('#packages_list tbody').children().each(function(idx, el) {
-					// Dunno what these are but we gotta filter it out for some reason
-					if ((el.attribs.id || '').includes('pub')) return;
-					if ($(el).text() === '') return;
-
-					if (el.attribs.class.includes('section-heading')) {
-						if ($(el).text().includes('active development')) return;
-						var fullname = $('td a', el).first().text();
-						curDistro = fullname.split(' ')[1].toLowerCase();
-					} else {
-						// Check if we're processing development versions
-						if (!curDistro) return;
-						var data = $(el).text().split(' ')
-						                       .map(s => s.trim())
-						                       .filter(s => s !== '');
-						var version = data[0].split('.').slice(0, 2).join('.');
-
-						if (!set[curDistro]) {
-							set[curDistro] = {lts: version, stable: null};
-						} else {
-							assert.equal(set[curDistro].lts, version);
-						}
-					}
+					// XXX I mean technically we can parse this streaming, but it's small so who cares
+					res.pipe(concat(function(buf) {
+						var distroData = csvparseSync(buf.toString(), {relax_column_count: true, columns: true});
+						cb(null, distroData);
+					}));
 				});
-				cb(null, {ubuntu: set});
-			}));
+			},
+			nodeData: function(cb) {
+				https.get('https://launchpad.net/ubuntu/+source/nodejs', function(res) {
+					res.on('error', cb);
+
+					assert.equal(res.statusCode, 200);
+
+					res.pipe(concat(function(buf) {
+						var $ = cheerio.load(buf.toString());
+
+						var set = {};
+						var curDistro;
+
+						$('#packages_list tbody').children().each(function(idx, el) {
+							// Dunno what these are but we gotta filter it out for some reason
+							if ((el.attribs.id || '').includes('pub')) return;
+							if ($(el).text() === '') return;
+
+							if (el.attribs.class.includes('section-heading')) {
+								if ($(el).text().includes('active development')) return;
+								var fullname = $('td a', el).first().text();
+								curDistro = fullname.split(' ')[1].toLowerCase();
+							} else {
+								// Check if we're processing development versions
+								if (!curDistro) return;
+								var data = $(el).text().split(' ')
+								    .map(s => s.trim())
+									.filter(s => s !== '');
+								var version = data[0].split('.').slice(0, 2).join('.');
+
+								if (!set[curDistro]) {
+									set[curDistro] = {lts: version, stable: null};
+								} else {
+									assert.equal(set[curDistro].lts, version);
+								}
+							}
+						});
+						cb(null, set);
+					}));
+				});
+			}
+		}, function(err, results) {
+			if (err) throw err;
+
+			var now = new Date();
+			var ubuntu = results.nodeData;
+			for (var i in ubuntu) {
+				// Note: if eol-server doesn't exist, then it's `undefined`. `new
+				// Date(undefined)` returns an invalid date which makes all
+				// comparisons to other dates with `>` and `<` return `false`.
+				var series = results.distroData.filter(el => el.series === i)[0];
+				var releaseDate = new Date(series.release);
+				var eol = new Date(series.eol);
+				var eolServer = new Date(series['eol-server']);
+				if (eolServer > eol) eol = eolServer;
+
+				if (eol < now || releaseDate > now) delete ubuntu[series.series];
+			}
+
+			cb(null, {ubuntu: ubuntu});
 		});
 	},
 	fedora: function(cb) {

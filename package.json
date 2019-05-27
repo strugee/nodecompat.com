@@ -29,6 +29,7 @@
   "devDependencies": {
     "cheerio": "^1.0.0-rc.2",
     "concat-stream": "^2.0.0",
+    "csv-parse": "^4.4.1",
     "ecstatic": "^2.1.0",
     "end-of-stream": "^1.4.1",
     "lodash.merge": "^4.6.1",
