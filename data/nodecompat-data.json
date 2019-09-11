@@ -19,10 +19,6 @@
 				"stable": null,
 				"lts": "8.10"
 			},
-			"cosmic": {
-				"lts": "8.11",
-				"stable": null
-			},
 			"disco": {
 				"lts": "10.15",
 				"stable": null
@@ -52,7 +48,7 @@
 			},
 			"epel7": {
 				"stable": null,
-				"lts": "6.16"
+				"lts": "6.17"
 			}
 		},
 		"centos": {
@@ -81,7 +77,7 @@
 		},
 		"upstream": {
 			"current": {
-				"stable": "12.5",
+				"stable": "12.10",
 				"lts": "10.16"
 			}
 		}
