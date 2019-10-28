@@ -8,6 +8,9 @@
 			"stretch": {
 				"stable": "8.11",
 				"lts": "4.8"
+			},
+			"buster": {
+				"lts": "10.15"
 			}
 		},
 		"ubuntu": {
@@ -96,6 +99,9 @@
 				},
 				"stretch": {
 					"prettyname": "9"
+				},
+				"buster": {
+					"prettyname": "10"
 				}
 			}
 		},
