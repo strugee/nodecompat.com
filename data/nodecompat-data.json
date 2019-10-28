@@ -22,6 +22,9 @@
 			"disco": {
 				"lts": "10.15",
 				"stable": null
+			},
+			"eoan": {
+				"lts": "10.15"
 			}
 		},
 		"fedora": {
@@ -112,6 +115,9 @@
 				},
 				"disco": {
 					"prettyname": "19.04"
+				},
+				"eoan": {
+					"prettyname": "19.10"
 				}
 			}
 		},
