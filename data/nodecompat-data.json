@@ -110,9 +110,6 @@
 				"bionic": {
 					"prettyname": "18.04 LTS"
 				},
-				"cosmic": {
-					"prettyname": "18.10"
-				},
 				"disco": {
 					"prettyname": "19.04"
 				},
@@ -126,9 +123,6 @@
 			"stabledesc": null,
 			"ltsdesc": "Main repo",
 			"versions": {
-				"28": {
-					"prettyname": "28"
-				},
 				"29": {
 					"prettyname": "29"
 				},
