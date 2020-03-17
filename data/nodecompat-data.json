@@ -22,20 +22,16 @@
 				"stable": null,
 				"lts": "8.10"
 			},
-			"disco": {
-				"lts": "10.15",
-				"stable": null
-			},
 			"eoan": {
 				"lts": "10.15"
 			}
 		},
 		"fedora": {
 			"30": {
-				"lts": "10.16"
+				"lts": "10.19"
 			},
 			"31": {
-				"lts": "12.10"
+				"lts": "12.16"
 			}
 		},
 		"redhat": {
@@ -82,8 +78,8 @@
 		},
 		"upstream": {
 			"current": {
-				"stable": "13.1",
-				"lts": "12.13"
+				"stable": "13.11",
+				"lts": "12.16"
 			}
 		}
 	},
