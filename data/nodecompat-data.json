@@ -117,9 +117,6 @@
 				"bionic": {
 					"prettyname": "18.04 LTS"
 				},
-				"disco": {
-					"prettyname": "19.04"
-				},
 				"eoan": {
 					"prettyname": "19.10"
 				},
