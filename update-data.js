@@ -12,6 +12,7 @@
   That leaves the following to be manually checked:
 
   * Debian
+  * Fedora (temporarily)
 
   The rest are aliased to various other values.
 
@@ -148,6 +149,10 @@ parallel({
 	fedora: function(cb) {
 		// XXX this API returns unreleased versions of Fedora
 		https.get('https://apps.fedoraproject.org/packages/fcomm_connector/bodhi/query/query_active_releases/%7B%22filters%22:%7B%22package%22:%22nodejs%22%7D,%22rows_per_page%22:10,%22start_row%22:0%7D', function(res) {
+			// !!! XXX REMOVE ME AS SOON AS POSSIBLE XXX !!!
+			// This is only a temporary hack until I figure out what the heck is up with Fedora's packages app.
+			return cb(null, {});
+
 			res.on('error', cb);
 
 			res.pipe(concat(function(buf) {
