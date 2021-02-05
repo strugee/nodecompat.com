@@ -16,8 +16,6 @@ Here's what that does:
 2. Compile [Stylus][4] in `src/styles/`
 3. (If you're on the `version-selector` branch) Compile a [Browserify][5] bundle starting from `src/scripts/main.js`
 
-Despite the fact that `gh-pages` is the branch that contains the built HTML/CSS/JS, nodecompat.com isn't actually hosted on GitHub Pages. However, you can easily deploy a new version by running `gulp deploy`, and then having @strugee run `git pull` for you on the server.
-
 ### Adding new distributions
 
 Adding a new distribution is pretty easy - you just have to have some basic JSON skills. `data/nodecompat-data.json` contains an object with two keys: `versions` and `distros`. `versions` contains the actual version data, while `distros` contains things like pretty names to display instead of ugly internal identifiers.
