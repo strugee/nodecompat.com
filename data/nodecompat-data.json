@@ -2,7 +2,7 @@
 	"versions": {
 		"debian": {
 			"jessie": {
-				"stable": "4.8",
+				"stable": null,
 				"lts": "0.10"
 			},
 			"stretch": {
@@ -10,7 +10,7 @@
 				"lts": "4.8"
 			},
 			"buster": {
-				"lts": "10.21"
+				"lts": "10.23"
 			}
 		},
 		"ubuntu": {
