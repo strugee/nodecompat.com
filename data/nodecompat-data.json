@@ -24,6 +24,9 @@
 			},
 			"focal": {
 				"lts": "10.19"
+			},
+			"groovy": {
+				"lts": "12.18"
 			}
 		},
 		"fedora": {
@@ -111,11 +114,11 @@
 				"bionic": {
 					"prettyname": "18.04 LTS"
 				},
-				"eoan": {
-					"prettyname": "19.10"
-				},
 				"focal": {
 					"prettyname": "20.04 LTS"
+				},
+				"groovy": {
+					"prettyname": "20.10"
 				}
 			}
 		},
