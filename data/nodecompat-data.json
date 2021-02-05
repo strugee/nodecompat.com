@@ -27,11 +27,11 @@
 			}
 		},
 		"fedora": {
-			"31": {
-				"lts": "12.16"
-			},
 			"32": {
 				"lts": "12.16"
+			},
+			"33": {
+				"lts": "14.15"
 			}
 		},
 		"redhat": {
@@ -124,14 +124,11 @@
 			"stabledesc": null,
 			"ltsdesc": "Main repo",
 			"versions": {
-				"30": {
-					"prettyname": "30"
-				},
-				"31": {
-					"prettyname": "31"
-				},
 				"32": {
 					"prettyname": "32"
+				},
+				"33": {
+					"prettyname": "33"
 				}
 			}
 		},
