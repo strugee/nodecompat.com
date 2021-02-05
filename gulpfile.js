@@ -20,7 +20,7 @@ gulp.task('html', function(cb) {
 
 		var data = JSON.parse(buf.toString());
 
-		stream.pipe(jade({ data: require('./data/nodecompat-data.json') }))
+		stream.pipe(jade({ data: data }))
 		      .pipe(gulp.dest('dist'));
 
 		// XXX async-done uses {error: false}, maybe we should too?
