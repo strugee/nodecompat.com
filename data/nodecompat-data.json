@@ -38,14 +38,6 @@
 			}
 		},
 		"redhat": {
-			"6": {
-				"stable": null,
-				"lts": null
-			},
-			"7": {
-				"stable": null,
-				"lts": null
-			},
 			"epel6": {
 				"stable": null,
 				"lts": "0.10"
@@ -56,12 +48,6 @@
 			}
 		},
 		"centos": {
-			"6": {
-				"alias": "redhat.6"
-			},
-			"7": {
-				"alias": "redhat.7"
-			},
 			"epel6": {
 				"alias": "redhat.epel6"
 			},
@@ -136,40 +122,28 @@
 			}
 		},
 		"redhat": {
-			"prettyname": "Red Hat Enterprise Linux",
+			"prettyname": "Red Hat Enterprise Linux <span id=\"epel-note\">(+ <abbr title=\"Extra Packages for Enterprise Linux\">EPEL</abbr>)</span>",
 			"stabledesc": null,
 			"ltsdesc": "Main repo",
 			"versions": {
-				"6": {
+				"epel6": {
 					"prettyname": "6"
 				},
-				"7": {
-					"prettyname": "7"
-				},
-				"epel6": {
-					"prettyname": "6 + EPEL"
-				},
 				"epel7": {
-					"prettyname": "7 + EPEL"
+					"prettyname": "7"
 				}
 			}
 		},
 		"centos": {
-			"prettyname": "CentOS",
+			"prettyname": "CentOS <span id=\"epel-note\">(+ <abbr title=\"Extra Packages for Enterprise Linux\">EPEL</abbr>)</span>",
 			"stabledesc": null,
 			"ltsdesc": "Main repo",
 			"versions": {
-				"6": {
+				"epel6": {
 					"prettyname": "6"
 				},
-				"7": {
-					"prettyname": "7"
-				},
-				"epel6": {
-					"prettyname": "6 + EPEL"
-				},
 				"epel7": {
-					"prettyname": "7 + EPEL"
+					"prettyname": "7"
 				}
 			}
 		},
