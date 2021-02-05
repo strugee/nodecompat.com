@@ -45,6 +45,10 @@
 			"epel7": {
 				"stable": null,
 				"lts": "6.17"
+			},
+			"epel8": {
+				"stable": null,
+				"lts": "-"
 			}
 		},
 		"centos": {
@@ -53,6 +57,9 @@
 			},
 			"epel7": {
 				"alias": "redhat.epel7"
+			},
+			"epel8": {
+				"alias": "redhat.epel8"
 			}
 		},
 		"archlinux": {
@@ -131,6 +138,9 @@
 				},
 				"epel7": {
 					"prettyname": "7"
+				},
+				"epel8": {
+					"prettyname": "8"
 				}
 			}
 		},
@@ -144,6 +154,9 @@
 				},
 				"epel7": {
 					"prettyname": "7"
+				},
+				"epel8": {
+					"prettyname": "8"
 				}
 			}
 		},
