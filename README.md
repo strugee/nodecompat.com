@@ -20,9 +20,18 @@ Here's what that does:
 
 Adding a new distribution is pretty easy - you just have to have some basic JSON skills. `data/nodecompat-data.json` contains an object with two keys: `versions` and `distros`. `versions` contains the actual version data, while `distros` contains things like pretty names to display instead of ugly internal identifiers.
 
-`versions` contains an object with keys for each distro. Each distro key is an object with keys for each distro version, and each distro version has a `stable` key and an `lts` key. What these mean on a semantic level depends on the distro (see below). Alternately, instead ob a `stable` and `lts` key, a distro can have an `alias` key which is a string of the form `<distro>.<distro_version>`. These aliases are resolved by the Jade templates at build-time. You can specify that Node isn't packaged in a particular distro version by specifying `null` instead of a string.
+`versions` contains an object with keys for each distro. Each distro key is an object with keys for each distro version, and each distro version has a `stable` key and an `lts` key. What these mean on a semantic level depends on the distro - the human-readable descriptions for them are specified per-distro in `distros`.
 
-`distros`, again, contains an object with keys for each distro. Each distro key is an object that has a couple well-known key names: `prettyname`, which is a human-readable long-form name for the distro; `stabledesc`, a description of what the `stable` version means for that particular distribution; `ltsdesc`, ditto for `lts`; and `versions`. `distros[distro].versions` contains the same distro versions as in `versions[distro]`, except that instead of having `stable` and `lts` keys, each version has a `prettyname` key which is a (short) human-readable string that names that version.
+Alternately, instead of a `stable` and `lts` key, a distro can have an `alias` key which is a string of the form `<distro>.<distro_version>`. These aliases are resolved by the Jade templates at build-time. You can specify that Node isn't packaged in a particular distro version by specifying `null` instead of a string.
+
+`distros`, again, contains an object with keys for each distro. Each of these keys' values is an object that has these properties:
+
+* `prettyname`, a human-readable long-form name for the distro
+* `stabledesc`, a description of what the `stable` version means for that particular distribution
+* `ltsdesc`, ditto for the `lts`; version
+* `versions`, which contains a key for each supported version of the distribution whose value is an object with one key, `prettyname`, which is a (short) human-readable string that names that version
+
+The distribution identifiers in `distros` match those in `versions`, and the version names in `distros[distro].versions` match the version names in `versions[distro]`.
 
 If a distribution has a rolling release version (possibly that's its _only_ version), its version key name should be `current` and should be aliased to `upstream.current`, and its `prettyname` should be `<em>Rolling release</em>`. Using codenames as internal version names (read: JSON key names) is fine, but don't put them in `prettyname`s. Don't be afraid to put `<code>` tags in `stabledesc` or `ltsdesc`; they won't be escaped and will make it through to the HTML.
 
