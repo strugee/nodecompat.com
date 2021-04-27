@@ -14,10 +14,6 @@
 			}
 		},
 		"ubuntu": {
-			"xenial": {
-				"stable": null,
-				"lts": "4.2"
-			},
 			"bionic": {
 				"stable": null,
 				"lts": "8.10"
@@ -107,9 +103,6 @@
 			"stabledesc": "<code>*-backports</code>",
 			"ltsdesc": "<code>universe</code>",
 			"versions": {
-				"xenial": {
-					"prettyname": "16.04 LTS"
-				},
 				"bionic": {
 					"prettyname": "18.04 LTS"
 				},
