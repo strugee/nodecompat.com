@@ -24,7 +24,7 @@
 			"groovy": {
 				"lts": "12.18"
 			},
-			"hirsuite": {
+			"hirsute": {
 				"lts": "12.21"
 			}
 		},
@@ -112,7 +112,7 @@
 				"groovy": {
 					"prettyname": "20.10"
 				},
-				"hirsuite": {
+				"hirsute": {
 					"prettyname": "21.04"
 				}
 			}
