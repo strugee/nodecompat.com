@@ -21,11 +21,11 @@
 			"focal": {
 				"lts": "10.19"
 			},
-			"groovy": {
-				"lts": "12.18"
+			"jammy": {
+				"lts": "12.22"
 			},
-			"hirsute": {
-				"lts": "12.21"
+			"impish": {
+				"lts": "12.22"
 			}
 		},
 		"fedora": {
@@ -76,8 +76,8 @@
 		},
 		"upstream": {
 			"current": {
-				"stable": "16.2",
-				"lts": "14.17"
+				"stable": "18.0",
+				"lts": "16.15"
 			}
 		}
 	},
@@ -109,11 +109,11 @@
 				"focal": {
 					"prettyname": "20.04 LTS"
 				},
-				"groovy": {
-					"prettyname": "20.10"
+				"jammy": {
+					"prettyname": "22.04"
 				},
-				"hirsute": {
-					"prettyname": "21.04"
+				"impish": {
+					"prettyname": "21.10"
 				}
 			}
 		},
