@@ -1,16 +1,11 @@
 {
 	"versions": {
 		"debian": {
-			"jessie": {
-				"stable": null,
-				"lts": "0.10"
-			},
-			"stretch": {
-				"stable": "8.11",
-				"lts": "4.8"
-			},
 			"buster": {
-				"lts": "10.23"
+				"lts": "10.24"
+			},
+			"bullseye": {
+				"lts": "12.22"
 			}
 		},
 		"ubuntu": {
@@ -87,14 +82,11 @@
 			"stabledesc": "<code>*-backports</code>",
 			"ltsdesc": "<code>main</code>",
 			"versions": {
-				"jessie": {
-					"prettyname": "8"
-				},
-				"stretch": {
-					"prettyname": "9"
-				},
 				"buster": {
 					"prettyname": "10"
+				},
+				"bullseye": {
+					"prettyname": "11"
 				}
 			}
 		},
