@@ -24,24 +24,21 @@
 			}
 		},
 		"fedora": {
-			"32": {
-				"lts": "12.22"
-			},
-			"33": {
-				"lts": "14.16"
-			},
 			"34": {
 				"lts": "14.16"
+			},
+			"35": {
+				"lts": "16.10"
 			}
 		},
 		"redhat": {
 			"epel6": {
 				"stable": null,
-				"lts": "0.10"
+				"lts": "-"
 			},
 			"epel7": {
 				"stable": null,
-				"lts": "6.17"
+				"lts": "16.14"
 			},
 			"epel8": {
 				"stable": null,
@@ -114,14 +111,11 @@
 			"stabledesc": null,
 			"ltsdesc": "Main repo",
 			"versions": {
-				"32": {
-					"prettyname": "32"
-				},
-				"33": {
-					"prettyname": "33"
-				},
 				"34": {
 					"prettyname": "34"
+				},
+				"35": {
+					"prettyname": "35"
 				}
 			}
 		},
